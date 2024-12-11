@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #0f2027, #203a43, #2c5364);
+    background-size: 300% 300%;
+    animation: gradientBackground 8s ease infinite;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Background Animation */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header Styles */
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffe066; /* Bright color to make it pop */
+    margin-bottom: 1rem;
+}
+
+/* Description Styles */
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.description li {
+    margin: 0.5rem 0;
+}
+
+/* Social Media Section */
+.social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffdf67;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    margin: 1rem 0;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #203a43);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-link img {
+    margin-right: 0.5rem;
+    width: 32px;
+    height: 32px;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #dddddd;
+}
